@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MRU Faculty of Science & Technology</title>
+  <style>
+    /* General styling */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #87b2f1ff;
+      color: #333;
+      padding: 4px;
+      box-sizing: border-box;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #002147; /*MRU primary color*/
+      color: #f3f571;
+      padding: 21px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      position: fixed;
+      top: 60px; 
+      left: 0;
+      width: 150px;
+      height: 100%;
+      background-color: #034078;/*MRU primary color*/  
+      padding-top: 20px;
+    }
+
+    .sidebar a {
+      display:inline-block;
+      color: #fff;
+      padding: 12px;
+      text-decoration: none;
+    }
+
+    .sidebar a:hover {
+      background-color: #10addd;
+    }
+
+    /* Main content */
+    .main {
+      margin-left: 220px; /* space for sidebar */
+      padding: 20px;
+    }
+
+    .main h1 {
+      color: #002147;
+      margin-bottom: 20px;
+    }
+
+    /* Table styling */
+     table {
+      width: 80%;
+      border-collapse: separate;
+      margin-bottom: 20px;
+    }
+
+    table, th, td {
+      border: 3px solid #f54f4f;
+    }
+
+    th, td {
+      padding: 9px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #2904af;
+      color: #fff;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #002147;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo"><strong>MRU - Faculty of Science & Technology</strong></div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <a href="#">Dashboard</a>
+    <a href="#">Courses</a>
+    <a href="#">Settings</a>
+    <a href="#">Profile</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <i><h1>COURSES IN FACULTY OF SCIENCE AND TECHINOLOGY</h1></i>
+    <table>
+      <tr>
+        <th>No.</th>
+        <th>Course Code</th>
+        <th>Course Title</th>
+        <th>Duration(years)</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>CST 101</td>
+        <td>Introduction to Computer Science</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>CST 202</td>
+        <td>Data Structures & Algorithms</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>CST 303</td>
+        <td>Database Management Systems</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>CST 404</td>
+        <td>Web Development</td>
+        <td>3</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; <span id="year"></span>2025 MRU Faculty of Science & Technology. All rights reserved.
+  </footer>
+</body>
+</html>
+                         
